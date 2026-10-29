@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Grade & Attendance System</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand">
+        <h2>🎓 GradeTrack</h2>
+        <span class="version">v1.0 Dashboard</span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#" class="nav-item active">📊 Dashboard</a>
+        <a href="#" class="nav-item">📚 Attendance</a>
+        <a href="#" class="nav-item">🧮 Grade Simulator</a>
+        <a href="#" class="nav-item">📈 Analytics</a>
+        <a href="#" class="nav-item">📋 ERP Import</a>
+        <a href="#" class="nav-item">⚙️ Settings</a>
+      </nav>
+      <div class="user-profile">
+        <div class="avatar">OR</div>
+        <div class="user-info">
+          <p class="user-name">Om Rai</p>
+          <p class="user-id">ID: 12615001059</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Top Header -->
+      <header class="top-header">
+        <div class="page-title">
+          <h1>Student Academic Dashboard</h1>
+          <p>Real-time attendance tracking & predictive grade analytics</p>
+        </div>
+        <div class="header-badges">
+          <span class="badge target-badge">Target: 75% Threshold</span>
+          <span class="badge status-badge">Live System</span>
+        </div>
+      </header>
+
+      <!-- Metric Cards -->
+      <section class="metrics-grid">
+        <div class="metric-card">
+          <span class="metric-label">Current Attendance</span>
+          <div class="metric-value green-text">78.4%</div>
+          <p class="metric-subtext">Overall aggregate across 4 subjects</p>
+        </div>
+        <div class="metric-card">
+          <span class="metric-label">Overall GPA</span>
+          <div class="metric-value blue-text">3.65 <span class="scale">/ 4.0</span></div>
+          <p class="metric-subtext">SGPA target on track</p>
+        </div>
+        <div class="metric-card">
+          <span class="metric-label">Total Bunk Buffer</span>
+          <div class="metric-value green-text">+8 Classes</div>
+          <p class="metric-subtext">Safe absences available</p>
+        </div>
+      </section>
+
+      <!-- Subject Breakdown & Bunk Planner Table -->
+      <section class="table-section">
+        <div class="section-header">
+          <h2>📚 Subject-Wise Breakdown & Bunk Planner</h2>
+          <button class="btn btn-secondary">Paste ERP Data</button>
+        </div>
+        <div class="table-container">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Attended</th>
+                <th>Total</th>
+                <th>Percentage</th>
+                <th>Bunk Planner Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>CS101 - Algorithms</strong></td>
+                <td>34</td>
+                <td>40</td>
+                <td><span class="pct-pill pct-high">85.0%</span></td>
+                <td><span class="status-pill status-safe">🟢 5 classes safe to bunk</span></td>
+              </tr>
+              <tr>
+                <td><strong>MA102 - Calculus</strong></td>
+                <td>25</td>
+                <td>40</td>
+                <td><span class="pct-pill pct-low">62.5%</span></td>
+                <td><span class="status-pill status-danger">🔴 Must attend next 20 classes</span></td>
+              </tr>
+              <tr>
+                <td><strong>PH103 - Physics</strong></td>
+                <td>31</td>
+                <td>38</td>
+                <td><span class="pct-pill pct-high">81.5%</span></td>
+                <td><span class="status-pill status-safe">🟢 3 classes safe to bunk</span></td>
+              </tr>
+              <tr>
+                <td><strong>EE104 - Electronics</strong></td>
+                <td>30</td>
+                <td>40</td>
+                <td><span class="pct-pill pct-mid">75.0%</span></td>
+                <td><span class="status-pill status-warning">🟡 At boundary (0 bunks left)</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
